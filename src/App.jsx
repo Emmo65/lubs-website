@@ -4,7 +4,9 @@ function App(){
   return(
     <div>
       <header className="header">
-        <div className="logo">LUBS</div>
+        <div className="logo">
+          <<img src={`${import.meta.env.BASE_URL}images/logo.svg`} alt="LUBS Logo" />img src={`${import.meta.env.BASE_URL}images/logo.svg`} alt="LUBS Logo" />
+          </div>
         <nav>
           <a href="#">Leistungen</a>
           <a href="#">Projekte</a>

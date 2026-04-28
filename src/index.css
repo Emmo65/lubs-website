@@ -5,6 +5,10 @@ body{
   color: #222;
 }
 
+.logo img {
+  height: 40px;
+}
+
 #root {
   min-height: 100vh;
   max-width: 1200px;
