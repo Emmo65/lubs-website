@@ -30,19 +30,21 @@ function App(){
           <div className="service-list">
             <div className="service">
               <h3>Design</h3>
+              <div className="service-image design-image"></div>
               <p>Von der Idee zum fertigen Auftritt.</p>
-
               <p>Wir entwickeln Logos, Flyer und Visitenkarten, die deine Marke klar und professionell präsentieren.</p>
             </div>
 
             <div className="service">
               <h3>Beschriftung</h3>
+              <div className="service-image beschriftung-image"></div>
               <p>Werbung, die sichtbar wird.</p>
               <p>Wir beschriften Fahrzeuge, Schaufenster und Räume – präzise, langlebig und wirkungsvoll.</p>
             </div>
 
             <div className="service">
               <h3>Leuchtwerbung</h3>
+              <div className="service-image leuchtwerbung-image"></div>
               <p>Auffallen – auch im Dunkeln.</p>
               <p>Mit moderner Leuchtwerbung sorgen wir dafür, dass dein Unternehmen sofort ins Auge fällt.</p>
             </div>

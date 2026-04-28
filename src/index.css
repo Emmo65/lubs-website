@@ -7,6 +7,31 @@ body{
 
 .logo img {
   height: 40px;
+  display: block;
+}
+
+.service-image {
+  height: 160px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+.design-image {
+  background-image: url('/images/design.jpg');
+  background-position: center;
+}
+
+.beschriftung-image {
+  background-image: url('/images/beschriftung.jpg');
+  background-position: center top;
+}
+
+.leuchtwerbung-image {
+  background-image: url('/images/leuchtwerbung.jpg');
+  background-position: center;
 }
 
 #root {
@@ -151,6 +176,10 @@ button {
 .service:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.01);
+}
+
+.service:hover .service-image {
+  transform: scale(1.05);
 }
 
 .service p {
