@@ -11,27 +11,12 @@ body{
 }
 
 .service-image {
+  width: 100%;
   height: 160px;
+  object-fit: cover;
   border-radius: 10px;
   margin-bottom: 15px;
-  background-size: cover;
-  background-position: center;
   transition: transform 0.3s ease;
-}
-
-.design-image {
-  background-image: url('/images/design.jpg');
-  background-position: center;
-}
-
-.beschriftung-image {
-  background-image: url('/images/beschriftung.jpg');
-  background-position: center top;
-}
-
-.leuchtwerbung-image {
-  background-image: url('/images/leuchtwerbung.jpg');
-  background-position: center;
 }
 
 #root {
