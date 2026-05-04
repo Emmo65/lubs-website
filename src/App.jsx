@@ -16,12 +16,15 @@ function App(){
       <main>
         <section className="hero">
           <p className="eyebrow">Werbetechnik für starke Markenauftritte</p>
-          <h1>Wir machen deine Marke sichtbar.</h1>
+          <h1>Werbetechnik, die sichtbar wirkt.</h1>
           <p className="hero-text">Von Fahrzeugbeschriftung bis Leuchtwerbung – wir sorgen dafür, dass dein Unternehmen auffällt.</p>
           <div>
-            <button className="primary">Projekte ansehen</button>
+            <button className="primary">Jetzt Projekt starten</button>
             <button className="secondary">Kontakt aufnehmen</button>
           </div>
+          <p className="hero-note">
+              Persönlich, zuverlässig und mit langjähriger Erfahrung.
+          </p>
         </section>
 
         <section className="services">
@@ -78,7 +81,7 @@ function App(){
         </section>
       </main>
       <footer className="footer">
-        <p>© LUBS Werbetechnik</p>
+        <p>© LUBS Werbetechnik · Alle Rechte vorbehalten</p>
         </footer>
     </div>
   );
