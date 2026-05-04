@@ -8,9 +8,9 @@ function App(){
           <img src={`${import.meta.env.BASE_URL}images/logo.svg`} alt="LUBS Logo" />
           </div>
         <nav>
-          <a href="#">Leistungen</a>
-          <a href="#">Projekte</a>
-          <a href="#">Kontakt</a>
+          <a href="#leistungen">Leistungen</a>
+          <a href="#kunden">Kunden</a>
+          <a href="#kontakt">Kontakt</a>
         </nav>
       </header>
       <main>
@@ -19,15 +19,15 @@ function App(){
           <h1>Werbetechnik, die sichtbar wirkt.</h1>
           <p className="hero-text">Von Fahrzeugbeschriftung bis Leuchtwerbung – wir sorgen dafür, dass dein Unternehmen auffällt.</p>
           <div>
-            <button className="primary">Jetzt Projekt starten</button>
-            <button className="secondary">Kontakt aufnehmen</button>
+            <a className="button primary" href="#leistungen">Leistungen ansehen</a>
+            <a className="button secondary" href="#kontakt">Kontakt aufnehmen</a>
           </div>
           <p className="hero-note">
               Persönlich, zuverlässig und mit langjähriger Erfahrung.
           </p>
         </section>
 
-        <section className="services">
+        <section className="services" id="leistungen">
           <p className="eyebrow">Leistungen</p>
           <h2>Alles für einen starken Auftritt</h2>
           <div className="service-list">
@@ -67,9 +67,9 @@ function App(){
           <p className="services-note">
             Du hast ein Projekt im Kopf? Lass uns gemeinsam sichtbar werden.
           </p>
-          <button className="primary">Jetzt Kontakt aufnehmen</button>
+          <button className=" button primary">Jetzt Kontakt aufnehmen</button>
         </section>
-        <section className="clients">
+        <section className="clients" id="kunden">
           <p className="eyebrow">Kunden</p>
           <h2>Unternehmen, die und vertrauen</h2>
           <div className="clients-image">
@@ -79,7 +79,7 @@ function App(){
               />
           </div>
         </section>
-        <section className="contact">
+        <section className="contact" id="kontakt">
           <p className="eyebrow">Kontakt</p>
           <h2>Lass uns dein Projekt umsetzen</h2>
 
@@ -87,7 +87,12 @@ function App(){
             Melde dich unverbindlich und wir finden gemeinsam die passende Lösung für dein Projekt.
           </p>
 
-          <button className="primary">Jetzt Kontakt aufnehmen</button>
+          <form className="contact-form">
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="E-Mail" />
+            <textarea placeholder="Worum geht es?" rows="5"></textarea>
+            <button className="primary" type="button">Anfrage senden</button>
+          </form>
         </section>
       </main>
       <footer className="footer">
