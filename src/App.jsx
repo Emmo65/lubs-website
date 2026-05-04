@@ -79,6 +79,16 @@ function App(){
               />
           </div>
         </section>
+        <section className="contact">
+          <p className="eyebrow">Kontakt</p>
+          <h2>Lass uns dein Projekt umsetzen</h2>
+
+          <p className="contact-text">
+            Melde dich unverbindlich und wir finden gemeinsam die passende Lösung für dein Projekt.
+          </p>
+
+          <button className="primary">Jetzt Kontakt aufnehmen</button>
+        </section>
       </main>
       <footer className="footer">
         <p>© LUBS Werbetechnik · Alle Rechte vorbehalten</p>
