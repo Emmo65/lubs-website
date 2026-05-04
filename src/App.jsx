@@ -66,6 +66,16 @@ function App(){
           </p>
           <button className="primary">Jetzt Kontakt aufnehmen</button>
         </section>
+        <section className="clients">
+          <p className="eyebrow">Kunden</p>
+          <h2>Unternehmen, die und vertrauen</h2>
+          <div className="clients-image">
+            <img
+              src={`${import.meta.env.BASE_URL}images/clients.jpg`}
+              alt="Unsere Kunden"
+              />
+          </div>
+        </section>
       </main>
       <footer className="footer">
         <p>© LUBS Werbetechnik</p>
