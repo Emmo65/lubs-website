@@ -67,7 +67,7 @@ function App(){
           <p className="services-note">
             Du hast ein Projekt im Kopf? Lass uns gemeinsam sichtbar werden.
           </p>
-          <button className=" button primary">Jetzt Kontakt aufnehmen</button>
+          <a className="button primary" href="#kontakt">Jetzt Kontakt aufnehmen</a>
         </section>
         <section className="clients" id="kunden">
           <p className="eyebrow">Kunden</p>
