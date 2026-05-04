@@ -1,6 +1,8 @@
-
+import { useState } from "react";
 
 function App(){
+  const [showImpressum, setShowImpressum] = useState(false);
+  const [showDatenschutz, setShowDatenschutz] = useState(false);
   return(
     <div>
       <header className="header">
@@ -71,7 +73,7 @@ function App(){
         </section>
         <section className="clients" id="kunden">
           <p className="eyebrow">Kunden</p>
-          <h2>Unternehmen, die und vertrauen</h2>
+          <h2>Unternehmen, die uns vertrauen</h2>
           <div className="clients-image">
             <img
               src={`${import.meta.env.BASE_URL}images/clients.jpg`}
@@ -95,9 +97,80 @@ function App(){
           </form>
         </section>
       </main>
+
+    
       <footer className="footer">
         <p>© LUBS Werbetechnik · Alle Rechte vorbehalten</p>
-        </footer>
+
+        <div className="footer-links">
+          <button className="footer-link" onClick={() => setShowImpressum(true)}>
+            Impressum
+          </button>
+          <button className="footer-link" onClick={() => setShowDatenschutz(true)}>
+            Datenschutz
+          </button>
+        </div>
+      </footer>
+      {showImpressum && (
+        <div className="modal-overlay" onClick={() => setShowImpressum(false)}>
+          <div className="modal" onClick={(e) => e.stopPropagation()}>
+            <button className="close" onClick={() => setShowImpressum(false)}>
+              ×
+            </button>
+
+            <h2>Impressum</h2>
+
+            <p>Angaben gemäß § 5 TMG</p>
+
+            <p>
+              LUBS Werbetechnik<br />
+              Lervin Mitrovic<br />
+              Düsseldorfer Str. 70a<br />
+              10719 Berlin
+            </p>
+
+            <p>
+              Kontakt:<br />
+              Telefon: +49 177 / 755 84 33<br />
+              E-Mail: info@lubs-wt.de
+            </p>
+
+            <p>
+              Umsatzsteuer-ID:<br />
+              DE283363541
+            </p>
+          </div>
+        </div>
+      )}
+      {showDatenschutz && (
+        <div className="modal-overlay" onClick={() => setShowDatenschutz(false)}>
+          <div className="modal" onClick={(e) => e.stopPropagation()}>
+            <button className="close" onClick={() => setShowDatenschutz(false)}>
+              ×
+            </button>
+
+            <h2>Datenschutzerklärung</h2>
+
+            <p>
+              Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst.
+              Personenbezogene Daten werden auf dieser Website nur im notwendigen Umfang erhoben.
+            </p>
+
+            <p>
+              Beim Besuch dieser Website werden automatisch Informationen durch den Hosting-Anbieter
+              (GitHub Pages) erfasst und in sogenannten Server-Logfiles gespeichert.
+            </p>
+
+            <p>
+              Wenn Sie uns per Formular kontaktieren, werden Ihre Angaben zur Bearbeitung der Anfrage gespeichert.
+            </p>
+
+            <p>
+              Sie haben jederzeit das Recht auf Auskunft, Berichtigung oder Löschung Ihrer gespeicherten Daten.
+            </p>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
